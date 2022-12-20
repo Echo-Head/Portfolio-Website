@@ -1,0 +1,110 @@
+body {
+  font-family: "Heebo", sans-serif;
+  color: #ffffff;
+  background: url("background.png"), #333;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  font-size: large;
+}
+
+@media screen and (min-width: 500px) {
+
+  /*Enabling responsive design*/
+  body {
+    display: grid;
+    grid-template-columns: 25% 75%;
+  }
+
+  nav {
+    grid-column: span 2;
+    grid-row: 1/1
+  }
+
+  header {
+    grid-column: span 2;
+    grid-row: 2/2;
+  }
+
+  aside {
+    grid-column: 1/1;
+    grid-row: 3/4;
+  }
+
+  main {
+    grid-column: 2/2;
+    grid-row: 3/4;
+  }
+
+  section {
+    grid-column: 2/2;
+    grid-row: 4/5;
+  }
+
+  footer {
+    grid-column: span 2;
+  }
+}
+
+h1,
+h2 {
+  /*Header font and styling*/
+  font-family: "Lora", sans-serif;
+  text-decoration: underline 3px #ffffff;
+}
+
+h3 {
+  font-family: "Lora", sans-serif;
+  text-decoration: underline 1px #ffffff;
+}
+
+.center-justified {
+  /*Keeping unordered lists centered*/
+  text-align: justify;
+  margin: 0 auto;
+  width: 20em;
+  word-spacing: normal;
+}
+
+nav {
+  /*Keeping the nav bar at the top always*/
+  position: sticky;
+  top: 0;
+  background-color: #2d3958c9;
+  display: flex;
+}
+
+nav a {
+  /*Nav bar sections styling and spacing*/
+  color: #f2f2f2;
+  padding: 14px 3px;
+  text-decoration: underline 1px #ffffff;
+  margin: auto;
+}
+
+nav a:hover {
+  /*Make the nav bar sections light up on hover*/
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+aside {
+  background: #2d3958c9;
+}
+
+footer {
+  background: #2d3958c9;
+  margin-top: 6%;
+  margin-bottom: 0%;
+}
+
+footer a {
+  /*Spacing out the icons in the footer*/
+  margin-inline: 1.5vw;
+}
+
+.imagestyling {
+  /*Make images round and apply shadow*/
+  border-radius: 50%;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3), 0 12px 40px 0 rgba(0, 0, 0, 0.25);
+}
